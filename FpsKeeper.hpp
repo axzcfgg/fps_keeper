@@ -16,6 +16,9 @@ namespace fps {
 	public:
 		keeper();
 
+		// set fps
+		keeper(const unsigned int fps_);
+
 		// calculate elapsed time, and set waiting time to keep fps
 		// if this->sleep is called, then return true. if not, return false
  		bool wait();

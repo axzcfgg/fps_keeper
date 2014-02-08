@@ -31,6 +31,15 @@ fps::keeper::keeper() :
 {	
 }
 
+// constructor
+fps::keeper::keeper(const unsigned int fps_) :
+	frame_time(1000) ,
+	prev_time(0) ,
+	bresenham_err(0) ,
+	fps(fps_)
+{	
+}
+
 //timeGetTime() on linux
 #if defined (LINUX_BUILD)
 	DWORD timeGetTime() {
